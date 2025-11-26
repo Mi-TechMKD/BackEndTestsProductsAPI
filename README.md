@@ -26,7 +26,7 @@ This ensures that the API works as expected and validates request/response behav
 
 ## Technologies Used
 
-* Java 17+
+* Java 24
 * JUnit 4
 * RestAssured (API testing library)
 * Maven (build and dependency management)
@@ -47,7 +47,7 @@ cd productsAPI
 mvn clean install
 ```
 
-3. Make sure your IDE supports Java 17+ and Lombok annotations.
+3. Make sure your IDE supports Java 24 and Lombok annotations.
 
 ## Running Tests
 
@@ -65,14 +65,17 @@ Or run specific test classes from your IDE.
 productsAPI/
 │
 ├─ src/main/java/
-│   ├─ models/             # POJOs for requests and responses
-│   ├─ objectbuilder/      # Classes to build API request bodies
-│   └─ utils/              # Configuration and helper classes
+│   ├─ client/               # API clients (e.g., ProductsClient.java)
+│   ├─ datafactory/          # Factories to generate request data
+│   ├─ models/               # POJOs for requests and responses
+│   ├─ objectbuilder/        # Builders to create request bodies
+│   └─ utils/                # Configuration and helper classes
 │
 ├─ src/test/java/
-│   └─ productsTests/      # JUnit test classes for API endpoints
+│   └─ productsTests/        # JUnit test classes for API endpoints
 │
-└─ pom.xml                 # Maven configuration
+└─ pom.xml                   # Maven build and dependencies
+
 ```
 
 ## API Examples
