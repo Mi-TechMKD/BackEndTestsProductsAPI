@@ -37,7 +37,7 @@ This ensures that the API works as expected and validates request/response behav
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/productsAPI.git
+git clone [https://github.com/yourusername/productsAPI.git](https://github.com/Mi-TechMKD/BackEndTestsProductsAPI.git)
 cd productsAPI
 ```
 
